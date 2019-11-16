@@ -1,0 +1,151 @@
+
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 2px 2px 2px #e2e2e2;
+}
+
+.nav-link {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-self: auto;;
+}
+
+#nav-link {
+    height: 80%;
+    display: grid;
+    align-content: space-evenly;
+}
+#nav-head {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+main {
+    float: right;
+    width: 74%;
+}
+
+header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+code {
+    border-color: #e2e2e2;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    padding: 10px;
+    display: flex;
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px #a7a7a7;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.dropbtn {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    margin-left: 0;
+    
+  }
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+  
+ 
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  .dropdown-content a:hover {
+      background-color: #e2e2e2;
+    }
+  
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+      z-index: 2;
+    }
+  
+  
+  .dropdown:hover .dropbtn {
+      background-color: #e2e2e2;
+    }
+
+
+    @media (max-width: 600px) {
+        #nav-link {
+            display: none;
+        }
+        #nav-head {
+            margin: auto;
+          }
+        .hr {
+            display: none;
+        }
+
+        nav {
+            height: auto;
+            width: 100%;
+            bottom: auto;
+            display: flex;
+        }
+
+        main {
+            width: 90%;
+            float: none;
+            margin-left: 15px;
+        }
+    }
+
+
+    @media (min-width: 600px) {
+        .dropdown {
+            display: none;
+        }
+    }
